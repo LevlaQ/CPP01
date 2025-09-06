@@ -1,24 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   zombieHorde.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/06 14:04:38 by gyildiz           #+#    #+#             */
-/*   Updated: 2025/09/06 16:28:04 by gyildiz          ###   ########.fr       */
+/*   Created: 2025/09/06 16:05:34 by gyildiz           #+#    #+#             */
+/*   Updated: 2025/09/06 16:23:46 by gyildiz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-int	main(void)
+void	Zombie::setName(std::string zname)
 {
-	Zombie *fresh;
-	
-	randomChump("RandomMe");
-	fresh = newZombie("NewChuck");
-	fresh->announce();
-	delete fresh;
-	return (0);
+	this->name = zname;
+}
+
+Zombie*	zombieHorde(int N, std::string name)
+{
+	Zombie *horde = new Zombie[N];
+	for(int i = 0; i < N; i++)
+	{
+		horde[i].setName(name);
+	}
+	return (horde);
 }

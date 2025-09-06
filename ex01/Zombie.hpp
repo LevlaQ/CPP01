@@ -1,24 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/06 14:04:38 by gyildiz           #+#    #+#             */
-/*   Updated: 2025/09/06 16:28:04 by gyildiz          ###   ########.fr       */
+/*   Created: 2025/09/06 16:05:31 by gyildiz           #+#    #+#             */
+/*   Updated: 2025/09/06 16:19:06 by gyildiz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#pragma once
 
-int	main(void)
+#include <iostream>
+#include <string>
+
+class Zombie
 {
-	Zombie *fresh;
-	
-	randomChump("RandomMe");
-	fresh = newZombie("NewChuck");
-	fresh->announce();
-	delete fresh;
-	return (0);
-}
+	private:
+	std::string name;
+	public:
+	void	announce(void);
+	void	setName(std::string zname);
+	Zombie();
+	~Zombie();
+};
+
+Zombie*	zombieHorde(int N, std::string name);
