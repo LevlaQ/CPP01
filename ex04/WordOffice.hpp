@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   WordOffice.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/06 19:18:02 by gyildiz           #+#    #+#             */
-/*   Updated: 2025/09/08 14:33:11 by gyildiz          ###   ########.fr       */
+/*   Created: 2025/09/08 13:21:51 by gyildiz           #+#    #+#             */
+/*   Updated: 2025/09/08 14:29:12 by gyildiz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "WordOffice.hpp"
+#pragma once
 
-//program_name filename str1 str2
-//str1 veya str 2 boş girilmesi durumunda ilgili dosyadan hiçbir şeyi değiştirmeden yaz
+#include <iostream>
+#include <string>
+#include <fstream>
 
-int	main(int ac, char **av)
-{
-	if (ac != 4)
-		std::cout << "ERROR: Invalid argumans! What should be <program> <filename> <str1> <str2>\n";
-}
