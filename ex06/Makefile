@@ -6,13 +6,13 @@
 #    By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/06 19:23:20 by gyildiz           #+#    #+#              #
-#    Updated: 2025/09/06 19:23:23 by gyildiz          ###   ########.fr        #
+#    Updated: 2025/09/15 14:50:23 by gyildiz          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS = main.cpp Harl.cpp
 OBJS = $(SRCS:.cpp=.o)
-EXE_NAME = harl
+EXE_NAME = harlFilter
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
