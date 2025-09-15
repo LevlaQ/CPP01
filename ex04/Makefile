@@ -6,11 +6,11 @@
 #    By: gyildiz <gyildiz@student.42istanbul.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/06 19:17:29 by gyildiz           #+#    #+#              #
-#    Updated: 2025/09/06 19:21:29 by gyildiz          ###   ########.fr        #
+#    Updated: 2025/09/15 13:50:06 by gyildiz          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS = main.cpp
+SRCS = main.cpp replace.cpp
 OBJS = $(SRCS:.cpp=.o)
 EXE_NAME = wordoffice
 CXX = c++
